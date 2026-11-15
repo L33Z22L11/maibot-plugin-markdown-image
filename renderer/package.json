@@ -1,0 +1,13 @@
+{
+  "name": "deerfolo-markdown-renderer",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": { "postinstall": "patch-package --error-on-fail && node setup-fonts.mjs" },
+  "dependencies": {
+    "@fontsource-variable/noto-sans-sc": "5.3.1",
+    "mdshot": "0.1.4",
+    "patch-package": "8.0.1",
+    "shiki": "4.6.0"
+  }
+}

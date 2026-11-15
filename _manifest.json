@@ -1,0 +1,16 @@
+{
+  "manifest_version": 2,
+  "id": "deerfolo.markdown-image",
+  "version": "1.0.0",
+  "name": "Markdown 图片渲染",
+  "description": "按需将 Markdown、表格、代码和 diff 渲染成图片并发送到当前聊天。",
+  "author": {"name": "Zhilu", "url": "https://github.com/L33Z22L11"},
+  "license": "MIT",
+  "urls": {"repository": "https://github.com/L33Z22L11/maibot-plugin-markdown-image"},
+  "host_application": {"min_version": "1.4.5", "max_version": "1.4.99"},
+  "sdk": {"min_version": "2.23.0", "max_version": "2.23.99"},
+  "plugin_type": "tool",
+  "dependencies": [{"type": "python_package", "name": "nodeenv", "version_spec": ">=1.12.0,<2.0.0"}],
+  "capabilities": [],
+  "i18n": {"default_locale": "zh-CN", "supported_locales": ["zh-CN"]}
+}

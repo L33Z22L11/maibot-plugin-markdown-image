@@ -1,0 +1,12 @@
+diff --git a/node_modules/mdshot/dist/_chunks/src.mjs b/node_modules/mdshot/dist/_chunks/src.mjs
+index 836e82b..693147d 100644
+--- a/node_modules/mdshot/dist/_chunks/src.mjs
++++ b/node_modules/mdshot/dist/_chunks/src.mjs
+@@ -103,6 +103,7 @@ function astToNodes(nodes, theme) {
+ 		}
+ 		if (tag === "pre") {
+ 			const codeContent = extractText(children);
++			if (globalThis.__mdshotCode) { const hooked = globalThis.__mdshotCode(_attrs?.language, codeContent, theme, { text, container }); if (hooked) { result.push(hooked); continue; } }
+ 			result.push(container({
+ 				display: "flex",
+ 				backgroundColor: theme.codeBg,
